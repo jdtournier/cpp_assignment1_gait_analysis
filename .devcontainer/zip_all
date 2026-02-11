@@ -1,0 +1,7 @@
+#!/bin/bash
+
+(
+    cd $CODESPACE_VSCODE_FOLDER
+    shopt -s nullglob globstar
+    zip -r submission.zip **/*.{cpp,cc,h,hpp}
+)
